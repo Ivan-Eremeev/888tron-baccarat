@@ -1,0 +1,1257 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/baccarat.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+        <title>Baccarat</title>
+    </head>
+    <body>
+        <div class="gameBaccarat px-3">
+            <div class="gameBaccarat_container p-3">
+                <div class="gameBaccarat_table mb-3">
+                    <div class="gameBaccarat_block">
+                        <div class="gameBaccarat_logo">
+                            <img src="img/baccarat/baccarat-logo.svg" alt="logo">
+                        </div>
+                        <div class="row">
+                            <div class="gameBaccarat_col gameBaccarat_col--left col-6 d-flex flex-wrap">
+                                <div class="gameBaccarat_pairCard gameBaccarat_pairCard--player">
+                                    <div class="gameBaccarat_card invert mr-1">
+                                        <img src="img/baccarat/invert.svg" alt="card">
+                                    </div>
+                                    <div class="gameBaccarat_card invert">
+                                        <img src="img/baccarat/invert.svg" alt="card">
+                                    </div>
+                                </div>
+                                <div class="gameBaccarat_counts">
+                                    <div class="gameBaccarat_name mr-2">Игрок</div>
+                                    <div class="gameBaccarat_score">9</div>
+                                </div>
+                            </div>
+                            <div class="gameBaccarat_col gameBaccarat_col--right col-6 d-flex flex-wrap">
+                                <div class="gameBaccarat_counts">
+                                    <div class="gameBaccarat_score">1</div>
+                                    <div class="gameBaccarat_name ml-2">Банкир</div>
+                                </div>
+                                <div class="gameBaccarat_pairCard gameBaccarat_pairCard--banker">
+                                    <div class="gameBaccarat_card mr-1">
+                                        <img src="img/cards/5.svg" alt="card">
+                                    </div>
+                                    <div class="gameBaccarat_card">
+                                        <img src="img/cards/4.svg" alt="card">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gameBaccarat_circles">
+                            <div class="gameBaccarat_circle gameBaccarat_draw"><span>Ничья</span></div>
+                            <div class="gameBaccarat_circle gameBaccarat_player active"><span>Игрок</span>
+                            </div>
+                            <div class="gameBaccarat_circle gameBaccarat_banker"><span>Банкир</span></div>
+                            <div class="gameBaccarat_circle gameBaccarat_circle--rect gameBaccarat_anyPair"><span>Любая пара</span>
+                                <div class="gameBaccarat_ratio gameBaccarat_ratio--left">5:1</div>
+                            </div>
+                            <div class="gameBaccarat_circle gameBaccarat_circle--rect
+                            gameBaccarat_pairPlayers active"><span>Пара Игрока</span>
+                                <div class="gameBaccarat_ratio gameBaccarat_ratio--left">11:1</div>
+                            </div>
+                            <div class="gameBaccarat_circle gameBaccarat_circle--rect
+                            gameBaccarat_perfectPair"><span>Идельн. пара</span>
+                                <div class="gameBaccarat_ratio gameBaccarat_ratio--right">25:1</div>
+                            </div>
+                            <div class="gameBaccarat_circle gameBaccarat_circle--rect
+                            gameBaccarat_pairBanker"><span>Пара банкира</span>
+                                <div class="gameBaccarat_ratio gameBaccarat_ratio--right">11:1</div>
+                            </div>
+                            <div class="gameBaccarat_circle gameBaccarat_circle--rect gameBaccarat_small"><span>Малая</span>
+                                <div class="gameBaccarat_ratio gameBaccarat_ratio--left">1.5:1</div>
+                            </div>
+                            <div class="gameBaccarat_circle gameBaccarat_circle--rect gameBaccarat_big"><span>Большая</span>
+                                <div class="gameBaccarat_ratio gameBaccarat_ratio--right">0.54:1</div>
+                            </div>
+                            <div class="gameBaccarat_centerCard">
+                                <img src="img/baccarat/invert.svg" alt="card">
+                            </div>
+                            <div class="gameBaccarat_chip gameBaccarat_chip--1">
+                                <img src="img/baccarat/chip1.svg" alt="chip">
+                                <div class="gameBaccarat_chipValue"><span>1.00 TRX</span></div>
+                            </div>
+                            <div class="gameBaccarat_chip gameBaccarat_chip--5">
+                                <img src="img/baccarat/chip5.svg" alt="chip">
+                                <div class="gameBaccarat_chipValue"><span>5.00 TRX</span></div>
+                            </div>
+                            <div class="gameBaccarat_chip gameBaccarat_chip--25">
+                                <img src="img/baccarat/chip25.svg" alt="chip">
+                                <div class="gameBaccarat_chipValue"><span>25.00 TRX</span></div>
+                            </div>
+                            <div class="gameBaccarat_chip gameBaccarat_chip--100">
+                                <img src="img/baccarat/chip100.svg" alt="chip">
+                                <div class="gameBaccarat_chipValue"><span>100.00 TRX</span></div>
+                            </div>
+                            <div class="gameBaccarat_chip gameBaccarat_chip--500">
+                                <img src="img/baccarat/chip500.svg" alt="chip">
+                                <div class="gameBaccarat_chipValue"><span>500.00 TRX</span></div>
+                            </div>
+                            <div class="gameBaccarat_chip gameBaccarat_chip--1000">
+                                <img src="img/baccarat/chip1000.svg" alt="chip">
+                                <div class="gameBaccarat_chipValue"><span>1000.00 TRX</span></div>
+                            </div>
+                            <div class="gameBaccarat_num">29</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statisticsBaccarat mb-3">
+                    <div class="statisticsBaccarat_container">
+                        <div class="statisticsBaccarat_row">
+                            <div class="statisticsBaccarat_col-left p-0 order-1 order-sm-0 mb-3">
+                                <div class="statisticsBaccarat_title">Bead Road</div>
+                                <div class="statisticsBaccarat_block d-flex justify-content-between flex-wrap">
+                                    <div class="statisticsBaccarat_box red">
+                                        <div class="statisticsBaccarat_circle">9</div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box green">
+                                        <div class="statisticsBaccarat_circle">9</div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box blue">
+                                        <div class="statisticsBaccarat_circle">9</div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box green blue-element">
+                                        <div class="statisticsBaccarat_circle">7</div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box blue red-element">
+                                        <div class="statisticsBaccarat_circle">5</div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                    <div class="statisticsBaccarat_box">
+                                        <div class="statisticsBaccarat_circle"></div>
+                                        <div class="statisticsBaccarat_element"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="statisticsBaccarat_col-right pr-0 pl-0 pl-sm-2 d-flex flex-column order-0 order-sm-1 mb-3">
+                                <div class="statisticsBaccarat_title">Statistics</div>
+                                <div class="d-flex justify-content-between flex-wrap flex-column flex-grow-1">
+                                    <div class="statisticsBaccarat_item red">
+                                        <div class="statisticsBaccarat_element-b"></div>
+                                        <div class="statisticsBaccarat_score">5(36%)</div>banker
+                                    </div>
+                                    <div class="statisticsBaccarat_item blue">
+                                        <div class="statisticsBaccarat_element-b"></div>
+                                        <div class="statisticsBaccarat_score">6(43%)</div>Player
+                                    </div>
+                                    <div class="statisticsBaccarat_item green">
+                                        <div class="statisticsBaccarat_element-b"></div>
+                                        <div class="statisticsBaccarat_score">5(36%)</div>Tie
+                                    </div>
+                                    <div class="statisticsBaccarat_item red">
+                                        <div class="statisticsBaccarat_element-b statisticsBaccarat_element-b--min"></div>
+                                        <div class="statisticsBaccarat_score">3(21%)</div>
+                                        Banker pair
+                                    </div>
+                                    <div class="statisticsBaccarat_item blue">
+                                        <div class="statisticsBaccarat_element-b statisticsBaccarat_element-b--min"></div>
+                                        <div class="statisticsBaccarat_score">1(7%)</div>
+                                        Player pair
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="statisticsBaccarat_row">
+                            <div class="statisticsBaccarat_title">Big Road</div>
+                            <div class="statisticsBaccarat_block d-flex justify-content-between flex-wrap w-100">
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b blue">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b red">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b red blue-element">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b blue duble-element">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b red center">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b blue center red-element">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                                <div class="statisticsBaccarat_box statisticsBaccarat_box--b">
+                                    <div class="statisticsBaccarat_ring"></div>
+                                    <div class="statisticsBaccarat_element"></div>
+                                    <div class="statisticsBaccarat_element-c"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameBaccarat_controll p-3">
+                    <div class="gameBaccarat_buttons mb-4">
+                        <div class="gameBaccarat_btn">+</div>
+                        <div class="gameBaccarat_btn">Убрать</div>
+                        <div class="gameBaccarat_btn">Сдать</div>
+                        <div class="gameBaccarat_btn">Статистика</div>
+                    </div>
+                    <div class="gameBaccarat_buttons mb-4">
+                        <div class="gameBaccarat_btn mobile-hide">+</div>
+                        <div class="gameBaccarat_btn bet">Повторить ставку x2<span>200.00 TRX</span></div>
+                        <div class="gameBaccarat_btn bet">Повторить ставку<span>100.00 TRX</span></div>
+                        <div class="gameBaccarat_btn mobile-hide">Статистика</div>
+                    </div>
+                    <div class="gameBaccarat_buttons mb-4">
+                        <div class="gameBaccarat_btn mobile-hide">+</div>
+                        <div class="gameBaccarat_btn bet">Убрать</div>
+                        <div class="gameBaccarat_btn bet">Сдать</div>
+                        <div class="gameBaccarat_btn mobile-hide">Статистика</div>
+                    </div>
+                    <div class="gameBaccarat_statistics mobile-hide">
+                        <div class="gameBaccarat_info">Баланс: 
+                            <span>5,000.00 TRX</span>
+                        </div>
+                        <div class="gameBaccarat_info">Суммарная ставка: 
+                            <span>200.00 TRX</span>
+                        </div>
+                        <div class="gameBaccarat_info">Выигрыш: 
+                            <span>1,200.00 TRX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
